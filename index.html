@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>موقع المدرسة</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>مرحبًا بكم في مدرسة المستقبل</h1>
+  </header>
+  <nav>
+    <a href="#home">الرئيسية</a>
+    <a href="#register">التسجيل الجديد</a>
+    <a href="#about">حول المدرسة</a>
+  </nav>
+  <section id="register">
+    <h2>التسجيل الجديد</h2>
+    <div class="form-container">
+      <form id="registrationForm">
+        <input type="text" id="name" placeholder="الاسم الكامل" required>
+        <input type="email" id="email" placeholder="البريد الإلكتروني" required>
+        <input type="text" id="phone" placeholder="رقم الهاتف" required>
+        <button type="button" onclick="submitForm()">تسجيل</button>
+      </form>
+      <p id="successMessage" class="success-message">تم التسجيل بنجاح!</p>
+    </div>
+    <button onclick="promptPassword()">تحميل البيانات</button>
+    <button onclick="promptDeletePassword()">حذف جميع البيانات</button>
+  </section>
+  <footer>
+    جميع الحقوق محفوظة © 2024
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
